@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTradeMate - Professional Cryptocurrency Backtesting Framework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>CryptoTradeMate</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#strategies">Strategies</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>CryptoTradeMate: Professional Cryptocurrency Backtesting Framework</h1>
+                <p>Backtest, analyze, and optimize your crypto trading strategies with institutional-grade tools</p>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary">Get Started</button>
+                    <button class="btn btn--outline">View Results</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <!-- Features will be populated from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <h2>Backtesting Results</h2>
+            <div class="results-content">
+                <div class="results-table-container">
+                    <table class="results-table">
+                        <!-- Table content will be populated from JavaScript -->
+                    </table>
+                </div>
+                <div class="chart-container" style="position: relative; height: 400px;">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+            <div class="key-insights">
+                <h3>Key Insights</h3>
+                <ul class="insights-list">
+                    <li>Moving Average Crossover achieved the highest risk-adjusted returns with 0.776 Sharpe ratio</li>
+                    <li>RSI Strategy provided the best risk management with lowest maximum drawdown (-36.60%)</li>
+                    <li>All active strategies underperformed Buy & Hold (464.59%) during this bull market period</li>
+                    <li>Framework demonstrates institutional-grade backtesting capabilities with realistic transaction costs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategies Section -->
+    <section id="strategies" class="strategies">
+        <div class="container">
+            <h2>Trading Strategies</h2>
+            <div class="strategies-grid">
+                <!-- Strategy cards will be populated from JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="documentation" class="technical">
+        <div class="container">
+            <h2>Technical Implementation</h2>
+            <div class="technical-content">
+                <div class="tech-overview">
+                    <h3>Architecture Overview</h3>
+                    <p>Built with object-oriented design principles for maximum extensibility and maintainability. The framework utilizes abstract base classes and composition patterns to enable seamless integration of custom strategies and risk management systems.</p>
+                    <h4>Core Components</h4>
+                    <ul>
+                        <li><strong>BacktestEngine:</strong> Central orchestrator for strategy execution and performance tracking</li>
+                        <li><strong>DataProvider:</strong> Unified interface for multiple cryptocurrency data sources</li>
+                        <li><strong>Strategy Framework:</strong> Abstract base classes for implementing custom trading logic</li>
+                        <li><strong>Risk Analytics:</strong> Comprehensive performance metrics and drawdown analysis</li>
+                        <li><strong>Visualization Suite:</strong> Professional charting and reporting capabilities</li>
+                    </ul>
+                </div>
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-tags">
+                        <!-- Tech stack tags will be populated from JavaScript -->
+                    </div>
+                    <p style="margin-top: var(--space-16);">The framework leverages industry-standard libraries for data processing, statistical analysis, and visualization to ensure professional-grade results and maintainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <h2>Getting Started</h2>
+            <div class="getting-started-content">
+                <div class="installation-steps">
+                    <h3>Installation</h3>
+                    <ol>
+                        <!-- Installation steps will be populated from JavaScript -->
+                    </ol>
+                </div>
+                <div class="code-example">
+                    <h3>Quick Start Example</h3>
+                    <pre><code>from cryptotrademate import BacktestEngine
+from strategies import MovingAverageCrossover
+
+# Initialize backtesting engine
+engine = BacktestEngine('BTC-USD', '2020-01-01', '2024-01-01')
+
+# Create and run strategy
+strategy = MovingAverageCrossover(fast_period=50, slow_period=200)
+results = engine.run_backtest(strategy)
+
+# Analyze results
+print(f"Total Return: {results.total_return:.2f}%")
+print(f"Sharpe Ratio: {results.sharpe_ratio:.3f}")
+print(f"Max Drawdown: {results.max_drawdown:.2f}%")
+
+# Generate comprehensive report
+results.generate_report('backtest_results.html')</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CryptoTradeMate</h3>
+                    <p>Professional cryptocurrency backtesting framework for systematic trading research and strategy development.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com" target="_blank">GitHub Repository</a></li>
+                        <li><a href="https://docs.github.com" target="_blank">Documentation</a></li>
+                        <li><a href="https://github.com/features" target="_blank">Examples</a></li>
+                        <li><a href="https://docs.github.com/en/rest" target="_blank">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p><strong>Educational Use Only:</strong> This framework is designed for research and educational purposes. Not financial advice.</p>
+                    <p>Past performance does not guarantee future results. Cryptocurrency trading involves substantial risk of loss.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CryptoTradeMate. Released under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

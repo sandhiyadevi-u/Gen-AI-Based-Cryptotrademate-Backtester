@@ -1,0 +1,12 @@
+# CryptoTradeMate Requirements
+pandas>=1.5.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+yfinance>=0.1.87
+python-binance>=1.0.16
+ccxt>=2.0.0
+vectorbt>=0.25.0
+jupyter>=1.0.0
+notebook>=6.4.0
